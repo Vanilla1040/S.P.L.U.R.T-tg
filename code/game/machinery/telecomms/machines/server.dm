@@ -167,7 +167,7 @@
 
 /obj/machinery/telecomms/server/presets/command
 	id = "Command Server"
-	freq_listening = list(FREQ_COMMAND, FREQ_IAA)
+	freq_listening = list(FREQ_COMMAND)
 	autolinkers = list("command")
 
 /obj/machinery/telecomms/server/presets/command/New()
@@ -175,10 +175,6 @@
 	frequency_infos["[FREQ_COMMAND]"] = list(
 		"name" = RADIO_CHANNEL_COMMAND,
 		"color" = RADIO_COLOR_COMMAND
-	)
-	frequency_infos["[FREQ_IAA]"] = list( // SPLURT EDIT
-		"name" = RADIO_CHANNEL_IAA,
-		"color" = RADIO_COLOR_IAA
 	)
 
 /obj/machinery/telecomms/server/presets/engineering

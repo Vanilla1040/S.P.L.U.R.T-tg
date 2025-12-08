@@ -42,5 +42,4 @@
 		/datum/job_department/command::primary_work_area,
 		/datum/job_department/security::primary_work_area,
 		/datum/job_department/service::primary_work_area,
-		/datum/job_department/iaa::primary_work_area,
 	)
