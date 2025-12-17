@@ -10468,6 +10468,7 @@
 #include "modular_zzplurt\code\modules\resize\sizechems.dm"
 #include "modular_zzplurt\code\modules\resize\sizegun.dm"
 #include "modular_zzplurt\code\modules\resize\smallsprite_action.dm"
+#include "modular_zzplurt\code\modules\sec_haul\code\guns\bullets.dm"
 #include "modular_zzplurt\code\modules\security\security_glock\cargo.dm"
 #include "modular_zzplurt\code\modules\security\security_glock\case.dm"
 #include "modular_zzplurt\code\modules\shuttle\serenity2.dm"
