@@ -269,7 +269,6 @@
 
 	var/list/dat = list()
 	dat += "AntiMatter Control Panel<BR>"
-	dat += "<A href='?src=[REF(src)];close=1'>Close</A><BR>"
 	dat += "<A href='?src=[REF(src)];refresh=1'>Refresh</A><BR>"
 	dat += "<A href='?src=[REF(src)];refreshicons=1'>Force Shielding Update</A><BR><BR>"
 	dat += "Status: [(active?"Injecting":"Standby")] <BR>"
@@ -290,7 +289,7 @@
 		dat += "- [fueljar.fuel]/[fueljar.fuel_max] Units<BR>"
 
 		dat += "- Injecting: [fuel_injection] units<BR>"
-		dat += "- <A href='?src=[REF(src)];strengthdown=1'>--</A>|<A href='?src=[REF(src)];strengthup=1'>++</A><BR><BR>"
+		dat += "- <A href='?src=[REF(src)];strengthdown=1'>Decrease Injection</A>|<A href='?src=[REF(src)];strengthup=1'>Increase Injection</A><BR><BR>"
 
 	var/datum/browser/popup = new(user, "amcontrol", "Anti Matter Control", 300, 300)
 	popup.set_content(dat.Join())
@@ -300,9 +299,8 @@
 	if(..())
 		return
 
-	if(href_list["close"])
-		usr << browse(null, "window=AMcontrol")
-		usr.unset_machine()
+	var/mob/user = usr
+	if(!can_interact(user))
 		return
 
 	if(href_list["togglestatus"])
