@@ -2,7 +2,6 @@
 	name = "socks"
 	desc = "A pair of socks."
 	icon_state = "white_norm"
-	body_parts_covered = FEET
 	extra_slot_flags = ITEM_SLOT_SOCKS
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION
 

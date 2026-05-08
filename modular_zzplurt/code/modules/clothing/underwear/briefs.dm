@@ -2,7 +2,6 @@
 	name = "briefs"
 	desc = "Not going commando."
 	icon_state = "male_briefs"
-	body_parts_covered = GROIN
 	extra_slot_flags = ITEM_SLOT_UNDERWEAR
 
 /obj/item/clothing/underwear/briefs/equipped(mob/living/user, slot)
