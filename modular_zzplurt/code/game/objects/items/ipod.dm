@@ -172,6 +172,9 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	if(length("[infile]") < length("a.ogg")) // minimum supported filename
 		to_chat(user, span_warning("Error, filename too short."))
 		return
+	if(length("[infile]") > 256) // maximum supported filename
+		to_chat(user, span_warning("Error, filename too long."))
+		return
 	var/file_extension = LOWER_TEXT(copytext("[infile]", -4))
 	if(!(file_extension == ".ogg" || file_extension == ".mp3"))
 		to_chat(user, span_warning("File type must be OGG or MP3: [infile]"))
