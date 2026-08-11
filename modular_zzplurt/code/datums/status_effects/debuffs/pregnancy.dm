@@ -110,8 +110,6 @@
 		pregnancy_flags |= PREGNANCY_FLAG_CRYPTIC
 	if(preference_source.prefs.read_preference(/datum/preference/toggle/pregnancy/belly_inflation))
 		pregnancy_flags |= PREGNANCY_FLAG_BELLY_INFLATION
-	if(preference_source.prefs.read_preference(/datum/preference/toggle/pregnancy/inert))
-		pregnancy_flags |= PREGNANCY_FLAG_INERT
 	if(preference_source.prefs.read_preference(/datum/preference/toggle/pregnancy/nausea))
 		pregnancy_flags |= PREGNANCY_FLAG_NAUSEA
 
