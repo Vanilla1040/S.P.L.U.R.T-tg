@@ -80,7 +80,6 @@
 		if(target_turf.liquids?.reagent_list[/datum/reagent/ammonia/urine] < 15)
 			target_turf.add_liquid(bladder.pissed_reagent, bladder.piss_dosage, FALSE, bladder.piss_temperature)
 
-
 /datum/interaction/lewd/unholy/piss_mouth
 	name = "Piss Mouth"
 	description = "Piss inside their mouth."
@@ -132,6 +131,10 @@
 /datum/interaction/lewd/unholy/piss_slit
 	name = "Piss in slit"
 	description = "Piss in their slit."
+	user_required_parts = list(ORGAN_SLOT_PENIS = REQUIRE_GENITAL_EXPOSED)
+	target_required_parts = list(ORGAN_SLOT_VAGINA = REQUIRE_GENITAL_EXPOSED)
+	cum_genital = list(CLIMAX_POSITION_USER = CLIMAX_PENIS, CLIMAX_POSITION_TARGET = CLIMAX_VAGINA)
+	cum_target = list(CLIMAX_POSITION_USER = ORGAN_SLOT_VAGINA, CLIMAX_POSITION_TARGET = ORGAN_SLOT_PENIS)
 	interaction_requires = list(INTERACTION_REQUIRE_SELF_BOTTOMLESS)
 	message = list(
 		"relieves themselves inside %TARGET%'s slit.",
@@ -160,9 +163,6 @@
 /datum/interaction/lewd/unholy/piss_slit/New()
 	sound_possible = GLOB.waterpiss_noises
 	return ..()
-
-/datum/interaction/lewd/unholy/piss_slit/allow_act(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	return ..() && target?.dna?.features?["penis_sheath"] == SHEATH_SLIT
 
 /datum/interaction/lewd/unholy/piss_slit/act(mob/living/user, mob/living/target)
 	. = ..()

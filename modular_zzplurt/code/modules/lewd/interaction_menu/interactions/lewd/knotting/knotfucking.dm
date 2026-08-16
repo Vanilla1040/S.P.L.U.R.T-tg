@@ -101,7 +101,11 @@
 		var/stat_before = target.stat
 		target.adjust_oxy_loss(3)
 		if(target.stat == UNCONSCIOUS && stat_before != UNCONSCIOUS)
-			message = list("%TARGET% passes out on %USER%'s %KNOT%.")
+			message = list(
+				"makes %TARGET% pass out on their %KNOT%.",
+				"chokes %TARGET% enough on their %KNOT% that they lose conciousness",
+				"makes %TARGET% gag with their %KNOT% as they pass out from the lack of oxygen"
+			)
 
 /datum/interaction/lewd/knotting/knotfucking/knotfuck_nipple
 	target_knotting_require = list(ORGAN_SLOT_NIPPLES)

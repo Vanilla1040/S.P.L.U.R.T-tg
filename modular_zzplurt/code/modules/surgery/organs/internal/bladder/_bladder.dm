@@ -127,12 +127,6 @@
 		break
 
 
-/obj/item/organ/bladder/clown
-	name = "clown bladder"
-	desc = "How does this even work?"
-
-	pissed_reagent = /datum/reagent/lube
-
 /obj/item/organ/bladder/cybernetic
 	name = "cybernetic bladder"
 	desc = "This is where your oil comes from!" // not really

@@ -76,7 +76,12 @@
 
 /datum/interaction/lewd/throatfuck/post_interaction(mob/living/user, mob/living/target)
 	. = ..()
-	var/stat_before = target.stat
-	target.adjust_oxy_loss(3)
-	if(target.stat == UNCONSCIOUS && stat_before != UNCONSCIOUS)
-		message = list("%TARGET% passes out on %USER%'s cock.")
+	if(user.client?.prefs?.read_preference(/datum/preference/choiced/erp_status_extmharm) != "No" || target.client?.prefs?.read_preference(/datum/preference/choiced/erp_status_extmharm) != "No")
+		var/stat_before = target.stat
+		target.adjust_oxy_loss(3)
+		if(target.stat == UNCONSCIOUS && stat_before != UNCONSCIOUS)
+			message = list(
+				"makes %TARGET% pass out on their %KNOT%.",
+				"chokes %TARGET% enough on their %KNOT% that they lose conciousness",
+				"makes %TARGET% gag with their %KNOT% as they pass out from the lack of oxygen"
+			)

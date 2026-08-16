@@ -78,3 +78,8 @@
 	knotting_supported = TRUE
 	target_knotting_require = list(ORGAN_SLOT_EYES)
 	custom_slot = ORGAN_SLOT_EYES
+
+/datum/interaction/lewd/cockfuck
+	knotting_supported = TRUE
+	target_knotting_require = list(ORGAN_SLOT_PENIS)
+	custom_slot = ORGAN_SLOT_PENIS

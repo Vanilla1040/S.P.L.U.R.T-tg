@@ -159,3 +159,97 @@
 	. = ..()
 	conditional_pref_sound(user, pick('modular_zzplurt/sound/interactions/crapjob.ogg',
 			'modular_zzplurt/sound/interactions/crapjob1.ogg'), 80, TRUE, falloff_distance = sound_range, pref_to_check = /datum/preference/toggle/erp/sounds) // interaction with the mouth
+
+/datum/interaction/lewd/unholy/fart // If piss needs a pref so does this and also god has left the server, I'm not touching this code again after this
+	name = "Fart"
+	description = "Let it rip"
+	usage = INTERACTION_SELF
+	message = list(
+		"lets out a girly little 'toot' from their butt.",
+		"farts loudly!",
+		"lets one rip!",
+		"farts! It sounds wet and smells like rotten eggs.",
+		"farts robustly!",
+		"farted! It smells like something died.",
+		"farts like a muppet!",
+		"defiles the station's air supply.",
+		"farts for a whole ten seconds.",
+		"groans and moans, farting like the world depended on it.",
+		"breaks wind!",
+		"expels intestinal gas through their anus.",
+		"releases an audible discharge of intestinal gas.",
+		"is a farting motherfucker!!!",
+		"suffers from flatulence!",
+		"releases flatus.",
+		"releases methane.",
+		"farts up a storm.",
+		"farts. It smells like Soylent Surprise!",
+		"farts. It smells like pizza!",
+		"farts. It smells like George Melons' perfume!",
+		"farts. It smells like the kitchen!",
+		"farts. It smells like medbay in here now!",
+		"farts. It smells like the bridge in here now!",
+		"farts like a pubby!",
+		"farts like a goone!",
+		"sharts! That's just nasty.",
+		"farts delicately.",
+		"farts timidly.",
+		"farts very, very quietly. The stench is OVERPOWERING.",
+		"farts egregiously.",
+		"farts voraciously.",
+		"farts cantankerously.",
+		"breaks wind noisily!",
+		"releases gas with the power of the gods! The very station trembles!!",
+		"<B><span style='color:red'>f</span><span style='color:blue'>a</span>r<span style='color:red'>t</span><span style='color:blue'>s</span>!</B>",
+		"laughs! their breath smells like a fart.",
+		"farts, and as such, blob cannot evoulate.",
+		"farts. It might have been the Citizen Kane of farts."
+	)
+	user_messages = list(
+		"lets out a girly little 'toot' from their butt.",
+		"farts loudly!",
+		"lets one rip!",
+		"farts! It sounds wet and smells like rotten eggs.",
+		"farts robustly!",
+		"farted! It smells like something died.",
+		"farts like a muppet!",
+		"defiles the station's air supply.",
+		"farts for a whole ten seconds.",
+		"groans and moans, farting like the world depended on it.",
+		"breaks wind!",
+		"expels intestinal gas through their anus.",
+		"releases an audible discharge of intestinal gas.",
+		"is a farting motherfucker!!!",
+		"suffers from flatulence!",
+		"releases flatus.",
+		"releases methane.",
+		"farts up a storm.",
+		"farts. It smells like Soylent Surprise!",
+		"farts. It smells like pizza!",
+		"farts. It smells like George Melons' perfume!",
+		"farts. It smells like the kitchen!",
+		"farts. It smells like medbay in here now!",
+		"farts. It smells like the bridge in here now!",
+		"farts like a pubby!",
+		"farts like a goone!",
+		"sharts! That's just nasty.",
+		"farts delicately.",
+		"farts timidly.",
+		"farts very, very quietly. The stench is OVERPOWERING.",
+		"farts egregiously.",
+		"farts voraciously.",
+		"farts cantankerously.",
+		"breaks wind noisily!",
+		"releases gas with the power of the gods! The very station trembles!!",
+		"<B><span style='color:red'>f</span><span style='color:blue'>a</span>r<span style='color:red'>t</span><span style='color:blue'>s</span>!</B>",
+		"laughs! their breath smells like a fart.",
+		"farts, and as such, blob cannot evoulate.",
+		"farts. It might have been the Citizen Kane of farts."
+	)
+	sound_possible = list()
+	sound_range = 1
+	sound_use = TRUE
+
+/datum/interaction/lewd/unholy/piss_self/New()
+	sound_possible = GLOB.assbrap_noises
+	return ..()
