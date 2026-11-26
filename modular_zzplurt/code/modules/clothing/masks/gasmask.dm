@@ -48,8 +48,8 @@
 	name = "Plastic Vampire Fangs"
 	desc = "This accessory makes for a fun halloween prank!  Spook your friends, terrify the local clown, get your head blown off by sec! Truly an all in one experience!"
 	icon = 'modular_zzplurt/icons/obj/clothing/masks.dmi'
-	icon_state = 'modular_zzplurt/icons/mob/clothing/mask.dmi'
-	worn_icon = "fakefangs"
+	worn_icon = 'modular_zzplurt/icons/mob/clothing/mask.dmi'
+	worn_icon_state = "fakefangs"
 	post_init_icon_state = "fakefangs"
 	inhand_icon_state = "sechailer"
 	w_class = WEIGHT_CLASS_SMALL

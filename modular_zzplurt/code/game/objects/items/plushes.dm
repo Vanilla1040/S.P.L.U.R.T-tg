@@ -189,7 +189,6 @@
 	inhand_icon_state = null
 	worn_icon_state = "glitchy_protogen_dildo"
 	change_sprite = FALSE
-	plappable = FALSE //Same as above
 
 /obj/item/clothing/sextoy/dildo/glitchy_protogen/Initialize(mapload)
 	. = ..()
