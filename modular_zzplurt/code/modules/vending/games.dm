@@ -17,6 +17,9 @@
 				/obj/item/toy/plush/suspicious_protogen = 3,
 				/obj/item/toy/plush/zenplush = 3,
 				/obj/item/toy/plush/novaplush = 3,
+				/obj/item/toy/plush/hatesplush = 3,
+				/obj/item/toy/plush/lemiplush = 3,
+				/obj/item/toy/plush/sampleplush = 3,
 			),
 		)
 	)

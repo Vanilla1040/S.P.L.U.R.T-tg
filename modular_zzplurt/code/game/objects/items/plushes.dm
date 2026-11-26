@@ -59,6 +59,7 @@
 	icon_state = "nobl_plush"
 	worn_icon_state = "nobl_plush"
 	squeak_override = list('modular_zzplurt/sound/misc/dog_toy.ogg' = 1)
+	plappable = FALSE //You can fuck this one already
 
 /obj/item/toy/plush/foth
 	name = "Foth Plushie"
@@ -188,6 +189,7 @@
 	inhand_icon_state = null
 	worn_icon_state = "glitchy_protogen_dildo"
 	change_sprite = FALSE
+	plappable = FALSE //Same as above
 
 /obj/item/clothing/sextoy/dildo/glitchy_protogen/Initialize(mapload)
 	. = ..()
@@ -273,3 +275,31 @@
 	attack_verb_simple = list("beep", "boop", "ping")
 	attack_verb_continuous = list("beeps", "boops", "pings")
 	squeak_override = list('modular_zzplurt/sound/machines/beep.ogg' = 1)
+
+/obj/item/toy/plush/hatesplush
+	name = "Stunningly fat tailed plushie"
+	desc = "Plushie of a dark lizard with very big tail. It holds a soft RPD in hand"
+	icon = 'modular_zzplurt/icons/obj/plushes.dmi'
+	icon_state = "hatesplush"
+	attack_verb_simple = list("claw", "hiss", "tail slap")
+	attack_verb_continuous = list("claws", "hisses", "tail slaps")
+	squeak_override = list('sound/effects/gas_hissing.ogg' = 10, 'sound/effects/valve_opening.ogg' = 10, 'sound/items/weapons/egloves.ogg' = 10, 'sound/machines/hypertorus/loops/hypertorus_nominal.ogg' = 1 )
+	plappable = FALSE // Doesn't want
+
+/obj/item/toy/plush/lemiplush
+	name = "Lemi Plushie"
+	desc = "A terrific, soft plushie depicting a blue teshari with a blank stare. It smells faintly of chicken nuggets and yells out when squeezed. Quite the creature."
+	icon = 'modular_zzplurt/icons/obj/plushes.dmi'
+	icon_state = "lemiplush"
+	attack_verb_simple = list("squeak", "yip", "scream")
+	attack_verb_continuous = list("squeaks", "yips", "screams")
+	squeak_override = list('modular_zubbers/sound/emotes/screams/slug_scream.ogg')
+
+/obj/item/toy/plush/sampleplush
+	name = "Sample Plush Golden Retriever"
+	desc = "A plush golden retriever filled with stuffing. The fur is rather soft to the touch."
+	icon = 'modular_zzplurt/icons/obj/plushes.dmi'
+	icon_state = "sampleplush"
+	attack_verb_simple = list("bark", "woof", "smacks")
+	attack_verb_continuous = list("barks", "woofs", "smacks")
+	squeak_override = list('modular_zzplurt/sound/misc/bonk.ogg')

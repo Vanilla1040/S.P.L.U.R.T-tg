@@ -235,3 +235,8 @@
 /datum/loadout_item/uniform/purple_kimono
 	name = "Purple Kimono"
 	item_path = /obj/item/clothing/under/costume/kimono/purple
+
+/datum/loadout_item/uniform/lemiclothing
+	name = "Vampire Lord's Suit"
+	item_path = /obj/item/clothing/under/costume/lemiclothing
+	ckeywhitelist = list("bluedragon66")

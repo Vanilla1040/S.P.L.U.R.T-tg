@@ -84,3 +84,23 @@
 	name = "Gilded Synth plushie"
 	item_path = /obj/item/toy/plush/aurumplush
 	ckeywhitelist = null
+
+/datum/loadout_item/toys/hatesplush
+	name = "Stunningly fat tailed plushie"
+	item_path = /obj/item/toy/plush/hatesplush
+	ckeywhitelist = null
+
+/datum/loadout_item/toys/sampleplush
+	name = "Sample Plush Golden Retriever"
+	item_path = /obj/item/toy/plush/sampleplush
+	ckeywhitelist = null
+
+/datum/loadout_item/toys/lemiplush
+	name = "Lemi Plushie"
+	item_path = /obj/item/toy/plush/lemiplush
+	ckeywhitelist = null
+
+/datum/loadout_item/toys/starwand
+	name = "Star Rod"
+	item_path = /obj/item/toy/starwand
+	ckeywhitelist = list("bluedragon66")

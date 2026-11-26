@@ -14,3 +14,12 @@
 	righthand_file = 'modular_zzplurt/icons/mob/inhands/weapons/hammers_righthand.dmi'
 	w_class = WEIGHT_CLASS_NORMAL
 
+/obj/item/toy/starwand
+	name = ""
+	desc = ""
+	icon = 'modular_zzplurt/icons/obj/toys/toy.dmi'
+	icon_state = "starwand"
+	inhand_icon_state = "starwand"
+	lefthand_file = 'modular_zzplurt/icons/mob/inhands/fluff_lefthand.dmi'
+	righthand_file = 'modular_zzplurt/icons/mob/inhands/fluff_righthand.dmi'
+	w_class = WEIGHT_CLASS_NORMAL

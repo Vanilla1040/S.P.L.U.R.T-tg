@@ -9,3 +9,8 @@
 /datum/loadout_item/mask/black_kitsune
 	name = "Black Kitsune Mask"
 	item_path = /obj/item/clothing/mask/kitsuneblk
+
+/datum/loadout_item/mask/lemifangs
+	name = "Plastic Vampire Fangs"
+	item_path = /obj/item/clothing/mask/breath/fakefangs
+	ckeywhitelist = list("bluedragon66")

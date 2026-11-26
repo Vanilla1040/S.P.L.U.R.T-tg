@@ -25,3 +25,11 @@
 	name = "moffuchi's pizzaria manager uniform"
 	desc = "A deep blue colored turtleneck with a gold nametag, bearing the name of the employee. Along with some snazzy black slacks, comfortable for being stranded on an icemoon!"
 	icon_state = "moffuchis_manager"
+
+/obj/item/clothing/under/costume/lemiclothing
+	name = "Vampire Lord's Suit"
+	desc = "A classic and totally not suspicious aristocratic ensemble with cloak often associated with halloween parties, though this one feels pretty authentic somehow."
+	icon = 'modular_zzplurt/icons/obj/clothing/under/costume.dmi'
+	worn_icon_teshari = 'modular_zzplurt/icons/mob/clothing/under/costume.dmi'
+	icon_state = "lemiclothing"
+
